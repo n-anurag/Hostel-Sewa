@@ -1,0 +1,274 @@
+.coverSectionContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.coverSectionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.coverSectionOverlay {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+}
+
+.coverSectionWelcomeText {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.coverSectionTitle {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.coverSectionHostelColor {
+  color: #E94E1B;
+}
+
+.coverSectionSewa {
+  color: #2581C4;
+}
+
+.coverSectionSubtitle {
+  font-size: 34px;
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 550;
+  font-style: normal;
+  color: #ddd;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.coverSectionInputField {
+  margin-top: 20px;
+}
+
+.coverSectionSearchBar {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid wheat; */
+  width: 140vh;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.coverSectionSearchInput,
+.coverSectionQualityDropdown,
+.coverSectionSearchButton {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  /* border-radius: 5px; */
+
+}
+
+.coverSectionSearchInput {
+  flex: 2;
+  
+}
+
+.coverSectionQualityDropdown {
+  width: 130px;
+}
+
+.coverSectionSearchButton {
+  background-color: #2581C4;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 20%;
+}
+
+.coverSectionSearchButton:hover {
+  background-color: #1e6da1;
+}
+
+.coverSectionFilterBar {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  /* border: 2px solid black; */
+  width: 64%;
+
+
+  margin-top: 10px;
+}
+
+.coverSectionFilterDropdown {
+  padding: 10px;
+  font-size: 1rem;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px; */
+  width: 200px;
+  outline: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .coverSectionWelcomeText {
+      font-size: 36px;
+  }
+
+  .coverSectionTitle {
+      font-size: 60px;
+      line-height: 80px;
+  }
+
+  .coverSectionSubtitle {
+      font-size: 28px;
+      max-width: 700px;
+  }
+
+  .coverSectionSearchInput,
+  .coverSectionQualityDropdown,
+  .coverSectionSearchButton,
+  .coverSectionFilterDropdown {
+      font-size: 0.9rem;
+  }
+}
+/* Adjustments for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .coverSectionContainer {
+    height: 80vh; /* Adjust height for smaller screens */
+  }
+
+  .coverSectionTitle {
+    font-size: 50px; /* Smaller font size for title */
+    line-height: 70px; /* Adjust line height */
+  }
+
+  .coverSectionSearchBar {
+    width: 100%; /* Ensure the search bar fits the screen */
+  }
+
+  .coverSectionSearchButton {
+    width: 30%; /* Adjust button size */
+  }
+}
+
+/* Adjustments for smaller tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .coverSectionContainer {
+    height: 70vh; /* Reduce height for smaller screens */
+  }
+
+  .coverSectionOverlay {
+    padding: 15px;
+  }
+
+  .coverSectionWelcomeText {
+    font-size: 26px; /* Smaller welcome text */
+  }
+
+  .coverSectionTitle {
+    font-size: 40px; /* Smaller title */
+  }
+
+  .coverSectionSubtitle {
+    font-size: 20px; /* Smaller subtitle */
+  }
+
+  .coverSectionSearchBar {
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Full width */
+    gap: 8px; /* Adjust gap */
+  }
+
+  .coverSectionSearchInput,
+  .coverSectionQualityDropdown,
+  .coverSectionSearchButton {
+    width: 100%; /* Make elements full width */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .coverSectionFilterBar {
+    flex-direction: column; /* Stack filter options vertically */
+    gap: 8px; /* Adjust gap */
+    width: 100%; /* Full width */
+  }
+
+  .coverSectionFilterDropdown {
+    width: 100%; /* Make dropdown full width */
+  }
+}
+
+/* Adjustments for mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .coverSectionContainer {
+    
+    height: 70vh; /* Reduce height for mobile screens */
+  }
+
+  .coverSectionOverlay {
+    height: 105vh;
+    padding: 10px;
+  }
+
+  .coverSectionWelcomeText {
+    font-size: 25px; /* Smaller welcome text */
+  }
+
+  .coverSectionTitle {
+    font-size: 38px; /* Smaller title */
+    line-height: 1.2; /* Adjust line height */
+  }
+
+  .coverSectionSubtitle {
+    font-size: 16px; /* Smaller subtitle */
+    max-width: 90%; /* Limit width */
+  }
+
+  .coverSectionSearchBar {
+    width: 100%; /* Full width */
+    flex-direction: column; /* Stack elements */
+    gap: 6px; /* Smaller gap */
+  }
+
+  .coverSectionSearchInput,
+  .coverSectionQualityDropdown,
+  .coverSectionSearchButton {
+    width: 100%; /* Full width for all elements */
+    font-size: 0.8rem; /* Smaller font size */
+    padding: 6px; /* Smaller padding */
+  }
+
+  .coverSectionSearchButton {
+    width: 100%; /* Full width */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .coverSectionFilterBar {
+    flex-direction: row; /* Stack filter options */
+   /* justify-content: space-around; */
+   width: 100%;
+   
+  }
+
+  .coverSectionFilterDropdown {
+    width: 28%; /* Further reduce width for mobile screens */
+
+    font-size: 0.7rem; /* Adjust font size for smaller dropdowns */
+    padding: 6px;
+    margin: auto;
+  }
+}

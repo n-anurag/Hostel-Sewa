@@ -1,0 +1,115 @@
+/* BlogDetail.css */
+.blog-detail {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 130px;
+  
+  }
+  
+  .blog-detail-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2581C4;
+    margin: 40px;
+  }
+  
+  .blog-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 400px;
+  }
+  
+  .blog-detail-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .blog-detail-content {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+  
+  /* Navigation Links */
+  .blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .nav-link {
+    color: #2581C4;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Medium screens (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .blog-detail {
+    width: 95%; /* Adjust width for tablets */
+    padding: 15px;
+  }
+
+  .blog-detail-title {
+    font-size: 1.5rem; /* Reduce title font size */
+    margin: 30px;
+  }
+
+  .blog-detail-image {
+    height: 300px; /* Reduce image height */
+  }
+
+  .blog-detail-content {
+    font-size: 0.95rem; /* Slightly smaller font size */
+  }
+
+  .blog-navigation {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+  }
+}
+
+/* Small screens (phones, 480px and below) */
+@media (max-width: 480px) {
+  .blog-detail {
+    width: 90%; /* Full width on small screens */
+    padding: 10px;
+  }
+
+  .blog-detail-title {
+    font-size: 1.3rem; /* Further reduce title font size */
+    margin: 20px 0;
+  }
+
+  .blog-detail-image {
+    height: 200px; /* Further reduce image height */
+  }
+
+  .blog-detail-content {
+    font-size: 0.9rem;
+  }
+
+  .blog-navigation {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px;
+    padding-top: 10px;
+  }
+}

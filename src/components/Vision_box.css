@@ -1,0 +1,169 @@
+.vision-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    width: 100%; /* Extend to full width */
+/* border: 2px solid black; */
+    gap: 40px;
+}
+
+.vision-text {
+    min-width: 300px;
+    height: 405px;
+    background: #fff;
+    border-radius: 8px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 10px;
+    font-family: Inter;
+    gap: 10px;
+    line-height: 52px;
+}
+
+.vision-text section{
+   
+font-size: 36px;
+font-weight: 500;
+line-height: 52px;
+text-align: left;
+   
+}
+
+.vision-text p {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.vision-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll; /* Allows horizontal scrolling */
+    scroll-behavior: smooth;
+    cursor: grab;
+    /* border: 2px solid black; */
+    width: 93%;
+
+  
+}
+
+/* Hide the scrollbar for all major browsers */
+.vision-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.vision-cards {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.vision-cards:active {
+    cursor: grabbing;
+}
+
+.card {
+    min-width: 300px; /* Set a min-width for cards to fit in the container */
+    height: 405px;
+    background: #fff;
+    border-radius: 8px 0px 0px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card img {
+    height: 270px;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card p {
+    padding: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+/* Responsive adjustments for medium-sized screens (tablets) */
+@media (min-width: 600px) {
+    .vision-section {
+        flex-direction: row; /* Maintain row layout */
+        gap: 30px; /* Adjust gap for better spacing */
+    }
+
+    .vision-text {
+        max-width: 300px; /* Restrict width for better layout on medium screens */
+        margin-top: 5%; /* Maintain spacing */
+    }
+
+    .vision-cards {
+        gap: 15px; /* Adjust gap between cards for smaller screens */
+    }
+
+    .card {
+        min-width: 250px; /* Adjust card size for better fit */
+        height: 380px; /* Adjust height for responsiveness */
+    }
+
+    .card img {
+        height: 220px; /* Adjust image height */
+    }
+}
+
+/* Responsive adjustments for larger screens (desktops) */
+@media (min-width: 1024px) {
+    .vision-section {
+        padding: 40px;
+        gap: 40px; /* Maintain original spacing */
+    }
+
+    .vision-text {
+        font-size: 2rem; /* Increase font size for readability */
+        line-height: 2.5rem; /* Adjust line height */
+    }
+
+    .card {
+        min-width: 300px; /* Original width for larger screens */
+        height: 405px; /* Original height */
+    }
+
+    .card img {
+        height: 270px; /* Original image height */
+    }
+}
+
+/* Additional adjustments for small screens (mobile) */
+@media (max-width: 599px) {
+    .vision-section {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce gap for smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .vision-text {
+        width: 100%; /* Take full width */
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+        line-height: 1.8rem; /* Adjust line height */
+        margin-top: 5%; /* Adjust top margin */
+    }
+
+    .vision-cards {
+        gap: 10px; /* Smaller gap between cards */
+    }
+
+    .card {
+        min-width: 220px; /* Reduce card width */
+        height: 350px; /* Reduce card height */
+    }
+
+    .card img {
+        height: 200px; /* Reduce image height */
+    }
+
+    .card p {
+        padding: 12px; /* Reduce padding */
+    }
+}

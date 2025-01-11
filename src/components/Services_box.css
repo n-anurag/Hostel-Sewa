@@ -1,0 +1,108 @@
+.out {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.outer-border,.outer-border-color {
+    border: 1px solid #6C757D;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 200px;
+    text-align: center;
+}
+
+.verified-card {
+    text-align: center;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.verified-text {
+    font-size: 20px;
+    color: #212529;
+}
+
+.description-text {
+    font-size: 14px;
+    color: #212529;
+    line-height: 1.5;
+}
+
+.service-text {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .outer-border {
+        width: 45%; /* Adjust to fit 2 items per row */
+        height: auto; /* Adjust height as content expands */
+    }
+}
+
+@media (max-width: 768px) {
+    .outer-border {
+        width: 70%; /* Full width on tablets */
+        height: auto;
+        padding: 15px;
+    }
+
+    .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .verified-text {
+        font-size: 18px;
+    }
+
+    .description-text {
+        font-size: 13px;
+    }
+
+    .service-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .outer-border {
+        width: 90%; /* Full width on mobile */
+        height: auto;
+        padding: 10px;
+    }
+
+    .image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .verified-text {
+        font-size: 16px;
+    }
+
+    .description-text {
+        font-size: 12px;
+    }
+
+    .service-text {
+        font-size: 20px;
+    }
+}
