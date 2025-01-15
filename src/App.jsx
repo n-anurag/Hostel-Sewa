@@ -43,6 +43,7 @@ import Job_form from './components/Forms/Job_form.jsx'
 import Recommend from './components/Forms/Recommend.jsx'
 // import Owner_register from './components/Owner_register.jsx'
 import ScrollToTop from './components/Navigate/Sroll_top.jsx'
+import AdminDashboard from './AdminDashboard.jsx'
 
 
 const App = (props) => {
@@ -75,7 +76,7 @@ const App = (props) => {
     <Route path="/form/job" element={<Job_form />} />
     <Route path="/form/recommend" element={<Recommend />} />
     <Route path="/location" element={<Location_hostel />} />
-
+    <Route path="/admin" element={<AdminDashboard />} />
 
     <Route path="/hostels" element={<Hostel_card />} />
     
